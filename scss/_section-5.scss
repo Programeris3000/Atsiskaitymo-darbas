@@ -1,0 +1,155 @@
+@use 'variables';
+@use 'responsive';
+@use 'general';
+.section-5-wrapper{
+  margin-bottom: 100px;
+  @include responsive.sm{
+    margin-bottom: 105px;
+  }
+
+  .container-xl{
+    .section-5{
+      display:flex;
+      flex-direction: column;
+      gap: 50px;
+      @include responsive.sm{
+        gap: 15.5px;
+        padding-left: 35px;
+      }   
+      .s5-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive.md{
+          flex-direction: column;
+          gap: 20px;
+          text-align: center;
+        }
+        @include responsive.sm{
+          align-items: flex-start;
+          gap: 0;
+        }   
+        .left{
+          display: flex;
+          flex-direction: column;
+          gap: 17px;
+          @include responsive.sm{
+            gap: 7.5px;
+            text-align: start;
+          }   
+          .pre-tittle{
+            font-size: 24px;
+            text-transform: uppercase;
+            color: rgb(243, 181, 98);
+            @include responsive.sm{
+              font-size: 13px;
+            }   
+          }
+          .tittle{
+            font-size: 41px;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: variables.$color-haki;
+            @include responsive.sm{
+              font-size: 22px;
+            }   
+          }
+        }
+        .right{
+          .image-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            @include responsive.sm{
+              display: none;
+            }   
+            .img-wrapper{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 75px;
+              height: 75px;
+              background-color: variables.$color-haki;
+              border-radius: 90px;
+              .full{
+              }
+            }
+            .img-wrapper-empty{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 75px;
+              height: 75px;
+              
+              border-radius: 90px;
+              .empty{
+            }
+          }
+            
+          }
+        }
+
+      }
+      .s5-bottom{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        @include responsive.md{
+          grid-template-columns: 1fr;
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        @include responsive.sm{
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+          grid-template-columns: 1fr 1fr;
+        }
+        .item-1{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding: 40px;
+          background: rgb(255,255,255);
+          background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(218,222,218,1) 100%);
+          border-radius: 10px;
+          .item-top{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 10px;
+            .top-img-wrapper{
+              .top-image{
+                max-width: 100%;
+              }
+            }
+            .top-text-wrapper{
+              .tittlle{
+                font-size: 16px;
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                @include responsive.sm{
+                  font-size: 12px;
+                }   
+              }
+              .subtitlle{
+                font-size: 13px;
+                @include responsive.sm{
+                  font-size: 10px;
+                }  
+              }
+              .description{
+                @include responsive.sm{
+                  font-size: 12px;
+                }  
+              }
+            }
+          }
+        }
+        
+      }
+    }
+  }
+}

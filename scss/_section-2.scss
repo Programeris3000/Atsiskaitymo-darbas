@@ -1,0 +1,210 @@
+@use 'variables';
+@use 'responsive';
+@use 'general';
+.section-2-wrapper{
+  margin-bottom: 147px;
+  position:relative;
+  @include responsive.sm{
+    margin-bottom: 57.5px;
+  }   
+
+  
+  .section-2-rectangle{
+    position: absolute;
+    max-width: 100%;
+  }
+  .container-xl{
+    .section-2{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      padding-top: 30px;
+      @include responsive.xl{
+        align-items: center;
+      }
+      @include responsive.lg{
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .section-2-left{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: flex-start;
+        @include responsive.lg{
+          align-items: center;
+          text-align: center;  
+        }
+        @include responsive.sm{
+          padding-left: 30px;
+          padding-right: 85px;
+          text-align: start;
+          align-items: flex-start;
+          gap: 17px;
+        }   
+        .s2-text-wrapper{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          .s2-left-pre-tittle{
+            font-size: 24px;
+            margin-bottom: 17px;
+            text-transform: uppercase;
+            color: rgb(243, 181, 98);
+            @include responsive.sm{
+              font-size: 13px;
+              margin-bottom: 5px;
+            }   
+          }
+          .s2-left-tittle{
+            font-size: 41px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            color: variables.$color-haki;
+            @include responsive.sm{
+              font-size: 20px;
+              margin-bottom: 26px;
+            }   
+          }
+          .s2-left-description{
+            @include responsive.sm{
+              font-size: 10px;
+            }   
+          }
+          
+        }
+        .button{
+          display: flex;
+          .button-link{
+            display: flex;
+            gap: 97px;
+            align-items: center;
+            text-decoration: none;
+            background-color: variables.$color-haki;
+            padding-left: 22px;
+            padding-top: 21px;
+            padding-bottom: 20.6px;
+            padding-right: 22px;
+            @include responsive.sm{
+              padding-left: 16px;
+              padding-top: 15px;
+              padding-bottom: 15.5px;
+              padding-right: 16px;
+            }   
+            .button-title{
+              text-transform: capitalize;
+              color: variables.$color-softwhite;
+            }
+            .button-arrow{
+              width: 12px;
+              height: 8px;
+            }
+          }
+        }
+      }
+      .section-2-right{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 28px;
+        margin-left: 108px;
+        margin-right: 100px;
+        @include responsive.xl{
+          grid-template-columns: 1fr;
+          gap: 0px;
+        }
+        @include responsive.lg{
+          grid-template-columns: 1fr 1fr;
+          margin-left: auto;
+          margin-right: auto;
+          }
+        @include responsive.sm{
+          padding-left: 30px;
+          padding-right: 30px;
+          }
+        .s2-right-item-white{
+          display: flex;
+          flex-direction: column;
+          padding: 40px;
+          gap: 16px;
+          background-color: white;
+          border-radius: 10px;
+          @include responsive.sm{
+            gap: 8px;
+            padding: 22px;
+            }
+          .car-container{
+            .smart-car{
+              padding: 10px;
+              background-color: variables.$color-haki;
+              border-radius: 10px;
+              max-width: 100%;
+            }
+          }
+          .car-container-text{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            @include responsive.sm{
+              gap:4px
+            }
+            .car-container-tittle{
+              font-size: 24px;
+              text-transform: capitalize;
+              @include responsive.sm{
+                font-size: 12px;
+              }
+            }
+            .car-container-description{
+              font-size: 13px;
+              @include responsive.sm{
+                font-size: 8px;
+              }
+            }
+          }
+        }
+        .s2-right-item{
+          display: flex;
+          flex-direction: column;
+          padding: 40px;
+          gap: 16px;
+          border-radius: 10px;
+          @include responsive.sm{
+            gap: 8px;
+            padding: 22px;
+            }
+          .car-container{
+            .smart-car{
+              padding: 10px;
+              background-color: white;
+              border-radius: 10px;
+              max-width: 100%;
+            }
+          }
+          .car-container-text{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            @include responsive.sm{
+              gap:4px
+            }
+            .car-container-tittle{
+              font-size: 24px;
+              text-transform: capitalize;
+              @include responsive.sm{
+                font-size: 12px;
+              }
+            }
+            .car-container-description{
+              font-size: 13px;
+              @include responsive.sm{
+                font-size: 8px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

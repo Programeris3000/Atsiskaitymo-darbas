@@ -1,0 +1,204 @@
+@use 'variables';
+@use 'responsive';
+@use 'general';
+.section-3-wrapper{
+  margin-bottom: 147px;
+  @include responsive.sm{
+    margin-bottom: 89.5px;
+  }   
+
+
+  .container-xl{
+    .section-3{
+      display: grid;
+      gap: 56px;
+      @include responsive.sm{
+        gap: 16.5px;
+      }   
+      .all-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .pre-tittle{
+          text-transform: uppercase;
+          margin-bottom: 17px;
+          font-size: 24px;
+          color: rgb(243, 181, 98);
+          @include responsive.sm{
+            font-size: 13px;
+            margin-bottom: 10px;
+          }   
+        }
+        .tittle{
+          font-size: 41px;
+          text-transform: uppercase;
+          color: variables.$color-haki;
+          @include responsive.sm{
+            font-size: 20px;
+          }   
+        }
+      }
+
+      .content-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        position:relative;
+        z-index: 0;
+        @include responsive.md{
+          grid-template-columns: 1fr;
+        }
+        @include responsive.sm{
+          grid-template-columns: 1fr 1fr;
+          padding-left: 48px;
+          gap: 17.5px;
+        }
+        .dots{
+          position: absolute;
+          bottom: -50px;
+          left: -50px;
+          z-index: -1;
+          @include responsive.sm{
+            width: 93px;
+            height: 93px;
+            bottom: -25px;
+            left: 25px;
+          }
+        }
+        .orange-gradient{
+          position: absolute;
+          bottom: -50px;
+          right: -150px;
+          z-index: -1;
+          @include responsive.sm{
+            display: none;
+          }
+        }
+        .item-first{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          background-color: white;
+          border-radius: 10px;
+          padding-top: 78px;
+          padding-left: 50px;
+          padding-right: 50px;
+          padding-bottom: 72px;
+          @include responsive.sm{
+            padding-top: 34px;
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-bottom: 32px;
+          }   
+          .content-wrapper-img{
+            width: 64px;
+            height: 64px;
+            margin-bottom: 24px;
+            @include responsive.sm{
+              width: 28px;
+              height: 28px;
+              margin-bottom: 10.5px;
+            }   
+          }
+          .content-wrapper-tittle{
+            margin-bottom: 12px;
+            font-size: 24px;
+            @include responsive.sm{
+              font-size: 10px;
+              margin-bottom: 3px;
+            }  
+          }
+          .content-wrapper-description{
+            @include responsive.sm{
+              font-weight: 8px;
+            }  
+          }
+        }
+        .item-middle{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          background-color: variables.$color-haki;
+          color: white;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          padding-top: 78px;
+          padding-left: 50px;
+          padding-right: 50px;
+          padding-bottom: 72px;
+          @include responsive.sm{
+            padding-top: 34px;
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-bottom: 32px;
+          }   
+          .content-wrapper-img{
+            width: 64px;
+            height: 64px;
+            margin-bottom: 24px;
+            @include responsive.sm{
+              width: 28px;
+              height: 28px;
+              margin-bottom: 10.5px;
+            }   
+          }
+          .content-wrapper-tittle{
+            margin-bottom: 12px;
+            font-size: 24px;
+            @include responsive.sm{
+              font-size: 10px;
+              margin-bottom: 3px;
+            }  
+          }
+          .content-wrapper-description{
+            @include responsive.sm{
+              font-weight: 8px;
+            }  
+          }
+        }
+        .item-last{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          background-color: white;
+          border-radius: 10px;
+          padding-top: 78px;
+          padding-left: 50px;
+          padding-right: 50px;
+          padding-bottom: 72px;
+          @include responsive.sm{
+            padding-top: 34px;
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-bottom: 32px;
+            display: none;
+          }   
+          .content-wrapper-img{
+            width: 64px;
+            height: 64px;
+            margin-bottom: 24px;
+            @include responsive.sm{
+              width: 28px;
+              height: 28px;
+              margin-bottom: 10.5px;
+            }   
+          }
+          .content-wrapper-tittle{
+            margin-bottom: 12px;
+            font-size: 24px;
+            @include responsive.sm{
+              font-size: 10px;
+              margin-bottom: 3px;
+            }  
+          }
+          .content-wrapper-description{
+            @include responsive.sm{
+              font-weight: 8px;
+            }  
+          }
+        }
+      }
+    }
+  }
+}

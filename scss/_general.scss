@@ -1,0 +1,23 @@
+@use 'variables';
+@use 'responsive';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.body{
+  margin: 0;
+}
+.container-xl {
+  max-width: 1141px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: antiquewhite;
+}
+.page-wrapper {
+  background-color: rgb(6, 159, 159);
+}
+

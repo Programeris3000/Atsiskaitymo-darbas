@@ -1,0 +1,43 @@
+@use 'variables';
+
+@mixin xs {
+  @media (max-width: variables.$breakpoint-1) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: variables.$breakpoint-2) {
+    @content;
+  }
+}
+
+@mixin nav-2 {
+  @media (max-width: variables.$breakpoint-nav-2) {
+    @content;
+  }
+}
+@mixin nav-3 {
+  @media (max-width: variables.$breakpoint-nav-3) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: variables.$breakpoint-3) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (max-width: variables.$breakpoint-4) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (max-width: variables.$breakpoint-5) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media (max-width: variables.$breakpoint-6) {
+    @content;
+  }
+}

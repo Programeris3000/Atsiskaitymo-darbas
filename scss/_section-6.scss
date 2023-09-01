@@ -1,0 +1,143 @@
+@use 'variables';
+@use 'responsive';
+@use 'general';
+  .section-6-wrapper{
+    background-color: rgb(240, 220, 197);
+    margin-bottom: 100px;
+
+
+    .container-xl{
+      .section-6{
+        padding-top: 103px;
+        padding-bottom: 97.4px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        @include responsive.xxl{
+          grid-template-columns: 2fr 3fr 2fr;
+          gap: 50px;
+        }
+        @include responsive.md{
+        grid-template-columns: 1fr;
+        }
+
+        .first-element{
+          display: flex;
+          flex-direction: column;
+          gap: 17px;
+          margin-right: 66.5px;
+          @include responsive.xxl{
+            margin-right: 0;
+          }
+          @include responsive.md{
+            align-items: center;
+            }
+          @include responsive.sm{
+            align-items: flex-start;
+          }   
+          .images-container{
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+            .logo{
+              max-width: 100%;
+            }
+            .logo-text{
+              max-width: 100%;
+            }
+          }
+          .text-container{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+          }
+          .social-media-container{
+            display: flex;
+            gap: 15px;
+          }
+        }
+        .middle-content{
+          display: flex;
+          justify-content: space-around;
+        .second-element,
+        .third-element{
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          margin-right: 120.5px;
+          @include responsive.xxl{
+            margin-right: 0;
+          }
+
+          .second-element-top{
+            .tittle{
+              color: variables.$color-haki;
+              font-size: 22px;
+              font-style: bold;
+            }
+          }
+          .secondd-element-bottom{
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            .link{
+              text-decoration: none;
+              color: black;
+            }
+          }
+          
+        }
+      }
+        .fourth-element{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          @include responsive.md{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            }
+          @include responsive.sm{
+            width: 100%;
+            margin: 0;
+          }   
+          
+          .text-area{
+            label{
+              text-transform: uppercase;
+              color: variables.$color-haki;
+            }
+            textarea{
+              border-style: none;
+              padding: 10px;
+              margin-top: 20px;
+              width: 100%;
+            }
+          }
+          .button{
+            background-color: variables.$color-haki;
+            .button-link{
+              display: flex;
+              gap: 97.46px;
+              align-items: center;
+              justify-content: space-between;
+              text-decoration: none;
+              padding-left: 22px;
+              padding-top: 21px;
+              padding-bottom: 20.6px;
+              .button-title{
+                text-transform: capitalize;
+                font-size: 12.5px;
+                text-transform: uppercase;
+                color: variables.$color-softwhite;
+              }
+              .button-arrow{
+                padding-right: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
