@@ -19,6 +19,13 @@
         @include responsive.md{
         grid-template-columns: 1fr;
         }
+        @include responsive.sm{
+          padding-top: 40px;
+          padding-left: 32px;
+          padding-bottom: 40.4px;
+          padding-right: 60px;
+          gap: 40px;
+          }
 
         .first-element{
           display: flex;
@@ -33,12 +40,17 @@
             }
           @include responsive.sm{
             align-items: flex-start;
+            gap: 0;
           }   
           .images-container{
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
             align-items: center;
+            @include responsive.sm{
+              margin-bottom: 17px;
+            }   
+            
             .logo{
               max-width: 100%;
             }
@@ -50,7 +62,29 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+            @include responsive.sm{
+              gap: 0;
+            }
+            .text1{
+              @include responsive.sm{
+                margin-bottom: 17px;
+                font-size: 14px;
+              }
+            }   
+            .text2{
+              @include responsive.sm{
+              margin-bottom: 8px;
+              font-size: 14px;
+              }
+            }   
+            .text3{
+              @include responsive.sm{
+              margin-bottom: 19px;
+              font-size: 14px;
+              }
+            }   
           }
+          
           .social-media-container{
             display: flex;
             gap: 15px;
@@ -59,6 +93,11 @@
         .middle-content{
           display: flex;
           justify-content: space-around;
+          @include responsive.sm{
+            justify-content: flex-start;
+            gap: 40px;
+          }
+
         .second-element,
         .third-element{
           display: flex;
@@ -68,27 +107,39 @@
           @include responsive.xxl{
             margin-right: 0;
           }
+          @include responsive.sm{
+            gap: 24px;
+          }
 
           .second-element-top{
             .tittle{
               color: variables.$color-haki;
               font-size: 22px;
               font-style: bold;
+              @include responsive.sm{
+                font-size: 20px;
+              }
             }
           }
           .secondd-element-bottom{
             display: flex;
             flex-direction: column;
             gap: 22px;
+            @include responsive.sm{
+              gap: 12px;
+            }
             .link{
               text-decoration: none;
               color: black;
+              @include responsive.sm{
+                font-size: 12px;
+              }
             }
           }
           
         }
       }
-        .fourth-element{
+      .fourth-element{
           display: flex;
           flex-direction: column;
           justify-content: space-between;
