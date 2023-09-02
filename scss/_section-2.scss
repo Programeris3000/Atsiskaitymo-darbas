@@ -80,7 +80,8 @@
             gap: 97px;
             align-items: center;
             text-decoration: none;
-            background-color: variables.$color-haki;
+            background: rgb(100,123,100);
+            background: linear-gradient(90deg, rgba(100,123,100,1) 0%, rgba(102,172,102,1) 100%);
             padding-left: 22px;
             padding-top: 21px;
             padding-bottom: 20.6px;

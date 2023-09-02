@@ -15,11 +15,14 @@
   max-width: 1141px;
   margin-left: auto;
   margin-right: auto;
-  background-color: antiquewhite;
 }
 
 .page-wrapper {
-  background-color: rgb(6, 159, 159);
+  background: #FFFFFF;
+  background-image: url(/images/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-1-wrapper {
@@ -39,7 +42,6 @@
   max-width: 1022px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(99, 57, 2);
 }
 .section-1-wrapper .container .section-1 {
   display: grid;
@@ -132,7 +134,8 @@
   }
 }
 .section-1-wrapper .container .section-1 .section-1-left .button .button-link {
-  background-color: rgb(100, 123, 100);
+  background: rgb(100, 123, 100);
+  background: linear-gradient(90deg, rgb(100, 123, 100) 0%, rgb(102, 172, 102) 100%);
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 97px;
@@ -283,7 +286,8 @@
   gap: 97px;
   align-items: center;
   text-decoration: none;
-  background-color: rgb(100, 123, 100);
+  background: rgb(100, 123, 100);
+  background: linear-gradient(90deg, rgb(100, 123, 100) 0%, rgb(102, 172, 102) 100%);
   padding-left: 22px;
   padding-top: 21px;
   padding-bottom: 20.6px;
@@ -518,7 +522,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: white;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(235, 238, 235) 100%);
   border-radius: 10px;
   padding-top: 78px;
   padding-left: 50px;
@@ -614,7 +619,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: white;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(235, 238, 235) 100%);
   border-radius: 10px;
   padding-top: 78px;
   padding-left: 50px;
@@ -766,7 +772,8 @@
   gap: 97px;
   align-items: center;
   text-decoration: none;
-  background-color: rgb(100, 123, 100);
+  background: rgb(100, 123, 100);
+  background: linear-gradient(90deg, rgb(100, 123, 100) 0%, rgb(102, 172, 102) 100%);
   padding-left: 22px;
   padding-top: 21px;
   padding-bottom: 20.6px;
@@ -882,7 +889,8 @@
   justify-content: center;
   width: 75px;
   height: 75px;
-  background-color: rgb(100, 123, 100);
+  background: rgb(100, 123, 100);
+  background: linear-gradient(90deg, rgb(100, 123, 100) 0%, rgb(102, 172, 102) 100%);
   border-radius: 90px;
 }
 .section-5-wrapper .container-xl .section-5 .s5-top .right .image-container .img-wrapper-empty {
@@ -921,7 +929,7 @@
   gap: 10px;
   padding: 40px;
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(218, 222, 218) 100%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(235, 238, 235) 100%);
   border-radius: 10px;
 }
 @media (max-width: 525px) {
@@ -973,7 +981,7 @@
   gap: 10px;
   padding: 40px;
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(218, 222, 218) 100%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(235, 238, 235) 100%);
   border-radius: 10px;
 }
 @media (max-width: 525px) {
@@ -1026,7 +1034,7 @@
   gap: 10px;
   padding: 40px;
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(218, 222, 218) 100%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(235, 238, 235) 100%);
   border-radius: 10px;
 }
 @media (max-width: 525px) {
@@ -1260,10 +1268,9 @@
   margin-top: 20px;
   width: 100%;
 }
-.section-6-wrapper .container-xl .section-6 .fourth-element .button {
-  background-color: rgb(100, 123, 100);
-}
 .section-6-wrapper .container-xl .section-6 .fourth-element .button .button-link {
+  background: rgb(100, 123, 100);
+  background: linear-gradient(90deg, rgb(100, 123, 100) 0%, rgb(102, 172, 102) 100%);
   display: flex;
   gap: 97.46px;
   align-items: center;
