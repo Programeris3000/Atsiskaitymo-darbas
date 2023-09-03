@@ -113,7 +113,7 @@
             background: linear-gradient(90deg, rgba(100, 123, 100, 1) 0%, rgba(102, 172, 102, 1) 100%);
             display: flex;
             flex-wrap: wrap;
-            column-gap: 97px;
+            column-gap: 142px;
             align-items: center;
             text-decoration: none;
             padding-left: 22px;
@@ -121,16 +121,18 @@
             padding-bottom: 20.6px;
             padding-right: 22px;
 
+
             @include responsive.sm {
               font-size: 10px;
               padding-left: 15px;
               padding-top: 13.6px;
               padding-bottom: 13px;
               padding-right: 11px;
+              gap: 56px;
             }
 
             .button-title {
-              text-transform: capitalize;
+              text-transform: uppercase;
               color: variables.$color-softwhite;
 
               @include responsive.sm {
@@ -144,8 +146,10 @@
             }
 
             .button-arrow {
+              @include responsive.sm {
               width: 12px;
               height: 8px;
+              }
             }
           }
         }

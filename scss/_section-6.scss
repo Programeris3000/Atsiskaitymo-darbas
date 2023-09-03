@@ -133,6 +133,8 @@
             @include responsive.sm{
               gap: 12px;
             }
+            li{
+              list-style: none;
             .link{
               text-decoration: none;
               color: variables.$color-soft-grey;
@@ -140,6 +142,7 @@
                 font-size: 12px;
               }
             }
+          }
           }
           
         }

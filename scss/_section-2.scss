@@ -89,7 +89,7 @@
           display: flex;
           .button-link{
             display: flex;
-            gap: 97px;
+            gap: 142px;
             align-items: center;
             text-decoration: none;
             background: rgb(100,123,100);
@@ -103,14 +103,20 @@
               padding-top: 15px;
               padding-bottom: 15.5px;
               padding-right: 16px;
+              gap: 71.5px;
             }   
             .button-title{
-              text-transform: capitalize;
+              text-transform: uppercase;
               color: variables.$color-softwhite;
+              @include responsive.sm{
+                font-size: 10px;
+              }
             }
             .button-arrow{
+              @include responsive.sm{
               width: 12px;
               height: 8px;
+              } 
             }
           }
         }

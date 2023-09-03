@@ -99,7 +99,7 @@
           background: linear-gradient(90deg, rgba(100,123,100,1) 0%, rgba(102,172,102,1) 100%);
           border-width: 0;
           padding: 15px;
-          border-radius: 10px;
+          border-radius: 5px;
           @include responsive.sm{
             display: none;
           }   

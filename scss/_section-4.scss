@@ -90,7 +90,7 @@
           display: flex;
           .button-link{
             display: flex;
-            gap: 97px;
+            gap: 142px;
             align-items: center;
             text-decoration: none;
             background: rgb(100,123,100);
@@ -109,14 +109,16 @@
             .button-title{
               text-transform: capitalize;
               color: variables.$color-softwhite;
+              text-transform: uppercase;
               @include responsive.sm{
               font-size: 10px;
-              text-transform: uppercase;
               } 
             }
             .button-arrow{
+              @include responsive.sm{
               width: 12px;
               height: 8px;
+              } 
             }
           }
         }
