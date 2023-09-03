@@ -111,11 +111,6 @@
   text-transform: uppercase;
   color: rgb(51, 51, 51);
 }
-@media (max-width: 764px) {
-  .section-1-wrapper .container .section-1 .section-1-left .section-left-text .title {
-    font-size: 30px;
-  }
-}
 @media (max-width: 525px) {
   .section-1-wrapper .container .section-1 .section-1-left .section-left-text .title {
     font-size: 24px;
@@ -1268,37 +1263,49 @@
   }
 }
 .section-6-wrapper .container-xl .section-6 .middle-content .second-element .second-element-top .tittle,
-.section-6-wrapper .container-xl .section-6 .middle-content .third-element .second-element-top .tittle {
+.section-6-wrapper .container-xl .section-6 .middle-content .second-element .third-element-top .tittle,
+.section-6-wrapper .container-xl .section-6 .middle-content .third-element .second-element-top .tittle,
+.section-6-wrapper .container-xl .section-6 .middle-content .third-element .third-element-top .tittle {
   color: rgb(100, 123, 100);
   font-size: 22px;
   font-style: bold;
 }
 @media (max-width: 525px) {
   .section-6-wrapper .container-xl .section-6 .middle-content .second-element .second-element-top .tittle,
-  .section-6-wrapper .container-xl .section-6 .middle-content .third-element .second-element-top .tittle {
+  .section-6-wrapper .container-xl .section-6 .middle-content .second-element .third-element-top .tittle,
+  .section-6-wrapper .container-xl .section-6 .middle-content .third-element .second-element-top .tittle,
+  .section-6-wrapper .container-xl .section-6 .middle-content .third-element .third-element-top .tittle {
     font-size: 20px;
   }
 }
 .section-6-wrapper .container-xl .section-6 .middle-content .second-element .secondd-element-bottom,
-.section-6-wrapper .container-xl .section-6 .middle-content .third-element .secondd-element-bottom {
+.section-6-wrapper .container-xl .section-6 .middle-content .second-element .third-element-bottom,
+.section-6-wrapper .container-xl .section-6 .middle-content .third-element .secondd-element-bottom,
+.section-6-wrapper .container-xl .section-6 .middle-content .third-element .third-element-bottom {
   display: flex;
   flex-direction: column;
   gap: 22px;
 }
 @media (max-width: 525px) {
   .section-6-wrapper .container-xl .section-6 .middle-content .second-element .secondd-element-bottom,
-  .section-6-wrapper .container-xl .section-6 .middle-content .third-element .secondd-element-bottom {
+  .section-6-wrapper .container-xl .section-6 .middle-content .second-element .third-element-bottom,
+  .section-6-wrapper .container-xl .section-6 .middle-content .third-element .secondd-element-bottom,
+  .section-6-wrapper .container-xl .section-6 .middle-content .third-element .third-element-bottom {
     gap: 12px;
   }
 }
 .section-6-wrapper .container-xl .section-6 .middle-content .second-element .secondd-element-bottom .link,
-.section-6-wrapper .container-xl .section-6 .middle-content .third-element .secondd-element-bottom .link {
+.section-6-wrapper .container-xl .section-6 .middle-content .second-element .third-element-bottom .link,
+.section-6-wrapper .container-xl .section-6 .middle-content .third-element .secondd-element-bottom .link,
+.section-6-wrapper .container-xl .section-6 .middle-content .third-element .third-element-bottom .link {
   text-decoration: none;
   color: rgb(79, 79, 79);
 }
 @media (max-width: 525px) {
   .section-6-wrapper .container-xl .section-6 .middle-content .second-element .secondd-element-bottom .link,
-  .section-6-wrapper .container-xl .section-6 .middle-content .third-element .secondd-element-bottom .link {
+  .section-6-wrapper .container-xl .section-6 .middle-content .second-element .third-element-bottom .link,
+  .section-6-wrapper .container-xl .section-6 .middle-content .third-element .secondd-element-bottom .link,
+  .section-6-wrapper .container-xl .section-6 .middle-content .third-element .third-element-bottom .link {
     font-size: 12px;
   }
 }

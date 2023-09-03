@@ -87,10 +87,6 @@
             text-transform: uppercase;
             color: variables.$color-grey;
 
-            @include responsive.md {
-              font-size: 30px;
-            }
-
             @include responsive.sm {
               font-size: 24px;
             }

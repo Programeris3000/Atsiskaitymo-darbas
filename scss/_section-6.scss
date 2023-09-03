@@ -114,7 +114,8 @@
             gap: 24px;
           }
 
-          .second-element-top{
+          .second-element-top,
+          .third-element-top{
             .tittle{
               color: variables.$color-haki;
               font-size: 22px;
@@ -124,7 +125,8 @@
               }
             }
           }
-          .secondd-element-bottom{
+          .secondd-element-bottom,
+          .third-element-bottom{
             display: flex;
             flex-direction: column;
             gap: 22px;
