@@ -66,18 +66,21 @@
               gap: 0;
             }
             .text1{
+              color: variables.$color-soft-grey;
               @include responsive.sm{
                 margin-bottom: 17px;
                 font-size: 14px;
               }
             }   
             .text2{
+              color: variables.$color-soft-grey;
               @include responsive.sm{
               margin-bottom: 8px;
               font-size: 14px;
               }
             }   
             .text3{
+              color: variables.$color-soft-grey;
               @include responsive.sm{
               margin-bottom: 19px;
               font-size: 14px;
@@ -130,7 +133,7 @@
             }
             .link{
               text-decoration: none;
-              color: black;
+              color: variables.$color-soft-grey;
               @include responsive.sm{
                 font-size: 12px;
               }
@@ -155,15 +158,20 @@
           }   
           
           .text-area{
+            @include responsive.sm{
+              text-align: start;
+            }  
             label{
               text-transform: uppercase;
               color: variables.$color-haki;
+
             }
             textarea{
               border-style: none;
               padding: 10px;
               margin-top: 20px;
               width: 100%;
+ 
             }
           }
           .button{

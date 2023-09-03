@@ -12,6 +12,17 @@
   .section-2-rectangle{
     position: absolute;
     max-width: 100%;
+    @include responsive.xl{
+      top: 300px;
+    }
+    @include responsive.lg{
+      top: unset;
+    }
+    @include responsive.sm{
+      width: 400px;
+      height: 68px;
+      left: -40px;
+    }
   }
   .container-xl{
     .section-2{
@@ -67,6 +78,7 @@
             }   
           }
           .s2-left-description{
+            color: variables.$color-soft-grey;
             @include responsive.sm{
               font-size: 10px;
             }   
@@ -130,6 +142,8 @@
           gap: 16px;
           background-color: white;
           border-radius: 10px;
+          box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+          z-index: 0;
           @include responsive.sm{
             gap: 8px;
             padding: 22px;
@@ -150,6 +164,7 @@
               gap:4px
             }
             .car-container-tittle{
+              color: variables.$color-grey;
               font-size: 24px;
               text-transform: capitalize;
               @include responsive.sm{
@@ -157,6 +172,7 @@
               }
             }
             .car-container-description{
+              color: variables.$color-soft-grey;
               font-size: 13px;
               @include responsive.sm{
                 font-size: 8px;
@@ -170,6 +186,7 @@
           padding: 40px;
           gap: 16px;
           border-radius: 10px;
+          z-index: 0;
           @include responsive.sm{
             gap: 8px;
             padding: 22px;
@@ -190,6 +207,7 @@
               gap:4px
             }
             .car-container-tittle{
+              color: variables.$color-grey;
               font-size: 24px;
               text-transform: capitalize;
               @include responsive.sm{
@@ -197,6 +215,7 @@
               }
             }
             .car-container-description{
+              color: variables.$color-soft-grey;
               font-size: 13px;
               @include responsive.sm{
                 font-size: 8px;

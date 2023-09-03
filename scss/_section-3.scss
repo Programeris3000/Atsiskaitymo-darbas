@@ -105,12 +105,14 @@
           .content-wrapper-tittle{
             margin-bottom: 12px;
             font-size: 24px;
+            color: variables.$color-grey;
             @include responsive.sm{
               font-size: 10px;
               margin-bottom: 3px;
             }  
           }
           .content-wrapper-description{
+            color: variables.$color-soft-grey;
             @include responsive.sm{
               font-weight: 8px;
             }  
@@ -189,6 +191,7 @@
             }   
           }
           .content-wrapper-tittle{
+            color: variables.$color-grey;
             margin-bottom: 12px;
             font-size: 24px;
             @include responsive.sm{
@@ -197,6 +200,7 @@
             }  
           }
           .content-wrapper-description{
+            color: variables.$color-soft-grey;
             @include responsive.sm{
               font-weight: 8px;
             }  

@@ -53,7 +53,7 @@
           .link {
             text-decoration: none;
             text-transform: capitalize;
-            color: black;
+            color: variables.$color-grey;
             font-weight: 600;
             }
             :nth-child(4){
@@ -74,7 +74,7 @@
             .link-1 {
               text-decoration: none;
               text-transform: capitalize;
-              color: black;
+              color: variables.$color-grey;
               font-weight: 600;
               @include responsive.sm{
                 display: none;

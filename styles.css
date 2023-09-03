@@ -105,9 +105,11 @@
   }
 }
 .section-1-wrapper .container .section-1 .section-1-left .section-left-text .title {
-  font-size: 40px;
+  font-size: 31px;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
+  color: rgb(51, 51, 51);
 }
 @media (max-width: 764px) {
   .section-1-wrapper .container .section-1 .section-1-left .section-left-text .title {
@@ -123,6 +125,7 @@
   font-size: 20px;
   margin: 0;
   padding: 0;
+  color: rgb(79, 79, 79);
 }
 @media (max-width: 764px) {
   .section-1-wrapper .container .section-1 .section-1-left .section-left-text .description {
@@ -207,6 +210,23 @@
   position: absolute;
   max-width: 100%;
 }
+@media (max-width: 1000px) {
+  .section-2-wrapper .section-2-rectangle {
+    top: 300px;
+  }
+}
+@media (max-width: 850px) {
+  .section-2-wrapper .section-2-rectangle {
+    top: unset;
+  }
+}
+@media (max-width: 525px) {
+  .section-2-wrapper .section-2-rectangle {
+    width: 400px;
+    height: 68px;
+    left: -40px;
+  }
+}
 .section-2-wrapper .container-xl .section-2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -273,6 +293,9 @@
     font-size: 20px;
     margin-bottom: 26px;
   }
+}
+.section-2-wrapper .container-xl .section-2 .section-2-left .s2-text-wrapper .s2-left-description {
+  color: rgb(79, 79, 79);
 }
 @media (max-width: 525px) {
   .section-2-wrapper .container-xl .section-2 .section-2-left .s2-text-wrapper .s2-left-description {
@@ -344,6 +367,8 @@
   gap: 16px;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+  z-index: 0;
 }
 @media (max-width: 525px) {
   .section-2-wrapper .container-xl .section-2 .section-2-right .s2-right-item-white {
@@ -368,6 +393,7 @@
   }
 }
 .section-2-wrapper .container-xl .section-2 .section-2-right .s2-right-item-white .car-container-text .car-container-tittle {
+  color: rgb(51, 51, 51);
   font-size: 24px;
   text-transform: capitalize;
 }
@@ -377,6 +403,7 @@
   }
 }
 .section-2-wrapper .container-xl .section-2 .section-2-right .s2-right-item-white .car-container-text .car-container-description {
+  color: rgb(79, 79, 79);
   font-size: 13px;
 }
 @media (max-width: 525px) {
@@ -390,6 +417,7 @@
   padding: 40px;
   gap: 16px;
   border-radius: 10px;
+  z-index: 0;
 }
 @media (max-width: 525px) {
   .section-2-wrapper .container-xl .section-2 .section-2-right .s2-right-item {
@@ -414,6 +442,7 @@
   }
 }
 .section-2-wrapper .container-xl .section-2 .section-2-right .s2-right-item .car-container-text .car-container-tittle {
+  color: rgb(51, 51, 51);
   font-size: 24px;
   text-transform: capitalize;
 }
@@ -423,6 +452,7 @@
   }
 }
 .section-2-wrapper .container-xl .section-2 .section-2-right .s2-right-item .car-container-text .car-container-description {
+  color: rgb(79, 79, 79);
   font-size: 13px;
 }
 @media (max-width: 525px) {
@@ -554,12 +584,16 @@
 .section-3-wrapper .container-xl .section-3 .content-wrapper .item-first .content-wrapper-tittle {
   margin-bottom: 12px;
   font-size: 24px;
+  color: rgb(51, 51, 51);
 }
 @media (max-width: 525px) {
   .section-3-wrapper .container-xl .section-3 .content-wrapper .item-first .content-wrapper-tittle {
     font-size: 10px;
     margin-bottom: 3px;
   }
+}
+.section-3-wrapper .container-xl .section-3 .content-wrapper .item-first .content-wrapper-description {
+  color: rgb(79, 79, 79);
 }
 @media (max-width: 525px) {
   .section-3-wrapper .container-xl .section-3 .content-wrapper .item-first .content-wrapper-description {
@@ -650,6 +684,7 @@
   }
 }
 .section-3-wrapper .container-xl .section-3 .content-wrapper .item-last .content-wrapper-tittle {
+  color: rgb(51, 51, 51);
   margin-bottom: 12px;
   font-size: 24px;
 }
@@ -658,6 +693,9 @@
     font-size: 10px;
     margin-bottom: 3px;
   }
+}
+.section-3-wrapper .container-xl .section-3 .content-wrapper .item-last .content-wrapper-description {
+  color: rgb(79, 79, 79);
 }
 @media (max-width: 525px) {
   .section-3-wrapper .container-xl .section-3 .content-wrapper .item-last .content-wrapper-description {
@@ -763,6 +801,7 @@
   }
 }
 .section-4-wrapper .container-xl .section-4 .s4-content .description {
+  color: rgb(79, 79, 79);
   margin-bottom: 25px;
 }
 .section-4-wrapper .container-xl .section-4 .s4-content .button {
@@ -956,6 +995,7 @@
   font-weight: bold;
   display: flex;
   flex-direction: column;
+  color: rgb(51, 51, 51);
 }
 @media (max-width: 525px) {
   .section-5-wrapper .container-xl .section-5 .s5-bottom .item-1 .item-top .top-text-wrapper .tittlle {
@@ -964,11 +1004,15 @@
 }
 .section-5-wrapper .container-xl .section-5 .s5-bottom .item-1 .item-top .top-text-wrapper .subtitlle {
   font-size: 13px;
+  color: rgb(79, 79, 79);
 }
 @media (max-width: 525px) {
   .section-5-wrapper .container-xl .section-5 .s5-bottom .item-1 .item-top .top-text-wrapper .subtitlle {
     font-size: 10px;
   }
+}
+.section-5-wrapper .container-xl .section-5 .s5-bottom .item-1 .item-top .top-text-wrapper .description {
+  color: rgb(79, 79, 79);
 }
 @media (max-width: 525px) {
   .section-5-wrapper .container-xl .section-5 .s5-bottom .item-1 .item-top .top-text-wrapper .description {
@@ -1009,6 +1053,7 @@
   font-weight: bold;
   display: flex;
   flex-direction: column;
+  color: rgb(51, 51, 51);
 }
 @media (max-width: 525px) {
   .section-5-wrapper .container-xl .section-5 .s5-bottom .item-2 .item-top .top-text-wrapper .tittlle {
@@ -1017,11 +1062,15 @@
 }
 .section-5-wrapper .container-xl .section-5 .s5-bottom .item-2 .item-top .top-text-wrapper .subtitlle {
   font-size: 13px;
+  color: rgb(79, 79, 79);
 }
 @media (max-width: 525px) {
   .section-5-wrapper .container-xl .section-5 .s5-bottom .item-2 .item-top .top-text-wrapper .subtitlle {
     font-size: 10px;
   }
+}
+.section-5-wrapper .container-xl .section-5 .s5-bottom .item-2 .item-top .top-text-wrapper .description {
+  color: rgb(79, 79, 79);
 }
 @media (max-width: 525px) {
   .section-5-wrapper .container-xl .section-5 .s5-bottom .item-2 .item-top .top-text-wrapper .description {
@@ -1054,6 +1103,7 @@
   font-weight: bold;
   display: flex;
   flex-direction: column;
+  color: rgb(51, 51, 51);
 }
 @media (max-width: 525px) {
   .section-5-wrapper .container-xl .section-5 .s5-bottom .item-3 .item-top .top-text-wrapper .tittlle {
@@ -1062,11 +1112,15 @@
 }
 .section-5-wrapper .container-xl .section-5 .s5-bottom .item-3 .item-top .top-text-wrapper .subtitlle {
   font-size: 13px;
+  color: rgb(79, 79, 79);
 }
 @media (max-width: 525px) {
   .section-5-wrapper .container-xl .section-5 .s5-bottom .item-3 .item-top .top-text-wrapper .subtitlle {
     font-size: 10px;
   }
+}
+.section-5-wrapper .container-xl .section-5 .s5-bottom .item-3 .item-top .top-text-wrapper .description {
+  color: rgb(79, 79, 79);
 }
 @media (max-width: 525px) {
   .section-5-wrapper .container-xl .section-5 .s5-bottom .item-3 .item-top .top-text-wrapper .description {
@@ -1153,17 +1207,26 @@
     gap: 0;
   }
 }
+.section-6-wrapper .container-xl .section-6 .first-element .text-container .text1 {
+  color: rgb(79, 79, 79);
+}
 @media (max-width: 525px) {
   .section-6-wrapper .container-xl .section-6 .first-element .text-container .text1 {
     margin-bottom: 17px;
     font-size: 14px;
   }
 }
+.section-6-wrapper .container-xl .section-6 .first-element .text-container .text2 {
+  color: rgb(79, 79, 79);
+}
 @media (max-width: 525px) {
   .section-6-wrapper .container-xl .section-6 .first-element .text-container .text2 {
     margin-bottom: 8px;
     font-size: 14px;
   }
+}
+.section-6-wrapper .container-xl .section-6 .first-element .text-container .text3 {
+  color: rgb(79, 79, 79);
 }
 @media (max-width: 525px) {
   .section-6-wrapper .container-xl .section-6 .first-element .text-container .text3 {
@@ -1231,7 +1294,7 @@
 .section-6-wrapper .container-xl .section-6 .middle-content .second-element .secondd-element-bottom .link,
 .section-6-wrapper .container-xl .section-6 .middle-content .third-element .secondd-element-bottom .link {
   text-decoration: none;
-  color: black;
+  color: rgb(79, 79, 79);
 }
 @media (max-width: 525px) {
   .section-6-wrapper .container-xl .section-6 .middle-content .second-element .secondd-element-bottom .link,
@@ -1256,6 +1319,11 @@
   .section-6-wrapper .container-xl .section-6 .fourth-element {
     width: 100%;
     margin: 0;
+  }
+}
+@media (max-width: 525px) {
+  .section-6-wrapper .container-xl .section-6 .fourth-element .text-area {
+    text-align: start;
   }
 }
 .section-6-wrapper .container-xl .section-6 .fourth-element .text-area label {
@@ -1349,7 +1417,7 @@
 .header-wrapper .container-xl .header .right-header-side .menu-list .link {
   text-decoration: none;
   text-transform: capitalize;
-  color: black;
+  color: rgb(51, 51, 51);
   font-weight: 600;
 }
 @media (max-width: 764px) {
@@ -1370,7 +1438,7 @@
 .header-wrapper .container-xl .header .right-header-side .menu-list .link-1 {
   text-decoration: none;
   text-transform: capitalize;
-  color: black;
+  color: rgb(51, 51, 51);
   font-weight: 600;
 }
 @media (max-width: 525px) {
