@@ -935,8 +935,7 @@
 }
 @media (max-width: 525px) {
   .section-5-wrapper .container-xl .section-5 .s5-bottom .item-1 {
-    width: 233.38px;
-    height: 271.63px;
+    width: 200px;
   }
 }
 .section-5-wrapper .container-xl .section-5 .s5-bottom .item-1 .item-top {
@@ -987,9 +986,9 @@
 }
 @media (max-width: 525px) {
   .section-5-wrapper .container-xl .section-5 .s5-bottom .item-2 {
-    width: 233.38px;
-    height: 271.63px;
+    width: 200px;
     position: absolute;
+    left: 228px;
   }
 }
 .section-5-wrapper .container-xl .section-5 .s5-bottom .item-2 .item-top {
