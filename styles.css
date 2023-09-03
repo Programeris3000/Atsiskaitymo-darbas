@@ -23,6 +23,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .section-1-wrapper {
@@ -1290,54 +1291,54 @@
   padding-right: 22px;
 }
 
-.container-xl .header {
+.header-wrapper .container-xl .header {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
   margin-bottom: 41px;
 }
 @media (max-width: 525px) {
-  .container-xl .header {
+  .header-wrapper .container-xl .header {
     padding-top: 40px;
     padding-left: 32px;
     padding-right: 32px;
     margin-bottom: 80px;
   }
 }
-.container-xl .header .left-header-side {
+.header-wrapper .container-xl .header .left-header-side {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 12px;
 }
-.container-xl .header .left-header-side .left-header-img {
+.header-wrapper .container-xl .header .left-header-side .left-header-img {
   max-width: 100%;
 }
 @media (max-width: 525px) {
-  .container-xl .header .left-header-side .left-header-img {
+  .header-wrapper .container-xl .header .left-header-side .left-header-img {
     height: 33px;
     width: 45.53px;
   }
 }
-.container-xl .header .left-header-side .left-header-logo-text {
+.header-wrapper .container-xl .header .left-header-side .left-header-logo-text {
   max-width: 100%;
 }
 @media (max-width: 525px) {
-  .container-xl .header .left-header-side .left-header-logo-text {
+  .header-wrapper .container-xl .header .left-header-side .left-header-logo-text {
     height: 9.82px;
     width: 84.98px;
   }
 }
-.container-xl .header .right-header-side {
+.header-wrapper .container-xl .header .right-header-side {
   display: flex;
   align-items: center;
 }
 @media (max-width: 764px) {
-  .container-xl .header .right-header-side {
+  .header-wrapper .container-xl .header .right-header-side {
     gap: 48px;
   }
 }
-.container-xl .header .right-header-side .menu-list {
+.header-wrapper .container-xl .header .right-header-side .menu-list {
   list-style: none;
   display: flex;
   justify-content: end;
@@ -1346,52 +1347,52 @@
        column-gap: 48px;
   row-gap: 20px;
 }
-.container-xl .header .right-header-side .menu-list .link {
+.header-wrapper .container-xl .header .right-header-side .menu-list .link {
   text-decoration: none;
   text-transform: capitalize;
   color: black;
   font-weight: 600;
 }
 @media (max-width: 764px) {
-  .container-xl .header .right-header-side .menu-list :nth-child(4) {
+  .header-wrapper .container-xl .header .right-header-side .menu-list :nth-child(4) {
     display: none;
   }
 }
 @media (max-width: 712px) {
-  .container-xl .header .right-header-side .menu-list :nth-child(3) {
+  .header-wrapper .container-xl .header .right-header-side .menu-list :nth-child(3) {
     display: none;
   }
 }
 @media (max-width: 635px) {
-  .container-xl .header .right-header-side .menu-list :nth-child(2) {
+  .header-wrapper .container-xl .header .right-header-side .menu-list :nth-child(2) {
     display: none;
   }
 }
-.container-xl .header .right-header-side .menu-list .link-1 {
+.header-wrapper .container-xl .header .right-header-side .menu-list .link-1 {
   text-decoration: none;
   text-transform: capitalize;
   color: black;
   font-weight: 600;
 }
 @media (max-width: 525px) {
-  .container-xl .header .right-header-side .menu-list .link-1 {
+  .header-wrapper .container-xl .header .right-header-side .menu-list .link-1 {
     display: none;
   }
 }
-.container-xl .header .right-header-side .menu-list .burger {
+.header-wrapper .container-xl .header .right-header-side .menu-list .burger {
   display: none;
 }
 @media (max-width: 764px) {
-  .container-xl .header .right-header-side .menu-list .burger {
+  .header-wrapper .container-xl .header .right-header-side .menu-list .burger {
     display: inline;
   }
 }
 @media (max-width: 525px) {
-  .container-xl .header .right-header-side .menu-list .burger {
+  .header-wrapper .container-xl .header .right-header-side .menu-list .burger {
     padding-right: 32px;
   }
 }
-.container-xl .header .right-header-side .styled-link {
+.header-wrapper .container-xl .header .right-header-side .styled-link {
   text-decoration: none;
   text-transform: capitalize;
   color: rgb(254, 254, 254);
@@ -1402,7 +1403,7 @@
   border-radius: 10px;
 }
 @media (max-width: 525px) {
-  .container-xl .header .right-header-side .styled-link {
+  .header-wrapper .container-xl .header .right-header-side .styled-link {
     display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

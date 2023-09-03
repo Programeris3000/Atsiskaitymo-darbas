@@ -1,108 +1,109 @@
 @use 'variables';
 @use 'responsive';
 @use 'general';
-
-.container-xl {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
-    margin-bottom: 41px;
-    @include responsive.sm{
-      padding-top: 40px;
-      padding-left: 32px;
-      padding-right: 32px;
-      margin-bottom: 80px;
-    }   
-
-    .left-header-side {
+.header-wrapper{
+  .container-xl {
+    .header {
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 12px;
+      justify-content: space-between;
+      padding-top: 50px;
+      margin-bottom: 41px;
+      @include responsive.sm{
+        padding-top: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-bottom: 80px;
+      }   
 
-      .left-header-img {
-        max-width: 100%;
-        @include responsive.sm{
-          height: 33px;
-          width: 45.53px;
-        }
-      }
-      .left-header-logo-text{
-        max-width: 100%;
-        @include responsive.sm{
-          height: 9.82px;
-          width: 84.98px;
-        }
-      }
-    }
-
-    .right-header-side {
-      display: flex;
-      align-items: center;
-      @include responsive.md{
-        gap: 48px;
-      }
-      .menu-list{
-        list-style: none;
+      .left-header-side {
         display: flex;
-        justify-content: end;
+        justify-content: flex-start;
         align-items: center;
-        column-gap: 48px;
-        row-gap: 20px;
-        .link {
-          text-decoration: none;
-          text-transform: capitalize;
-          color: black;
-          font-weight: 600;
+        gap: 12px;
+
+        .left-header-img {
+          max-width: 100%;
+          @include responsive.sm{
+            height: 33px;
+            width: 45.53px;
           }
-          :nth-child(4){
-            @include responsive.md{
-              display: none;
-            }
+        }
+        .left-header-logo-text{
+          max-width: 100%;
+          @include responsive.sm{
+            height: 9.82px;
+            width: 84.98px;
           }
-          :nth-child(3){
-            @include responsive.nav-3{
-              display: none;
-            }
-          }
-          :nth-child(2){
-            @include responsive.nav-2{
-              display: none;
-            }
-          }
-          .link-1 {
+        }
+      }
+
+      .right-header-side {
+        display: flex;
+        align-items: center;
+        @include responsive.md{
+          gap: 48px;
+        }
+        .menu-list{
+          list-style: none;
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          column-gap: 48px;
+          row-gap: 20px;
+          .link {
             text-decoration: none;
             text-transform: capitalize;
             color: black;
             font-weight: 600;
+            }
+            :nth-child(4){
+              @include responsive.md{
+                display: none;
+              }
+            }
+            :nth-child(3){
+              @include responsive.nav-3{
+                display: none;
+              }
+            }
+            :nth-child(2){
+              @include responsive.nav-2{
+                display: none;
+              }
+            }
+            .link-1 {
+              text-decoration: none;
+              text-transform: capitalize;
+              color: black;
+              font-weight: 600;
+              @include responsive.sm{
+                display: none;
+              }
+              }
+          .burger{
+            display:none;
+            @include responsive.md{
+              display: inline;
+            }
             @include responsive.sm{
-              display: none;
+              padding-right: 32px;
             }
-            }
-        .burger{
-          display:none;
-          @include responsive.md{
-            display: inline;
           }
-          @include responsive.sm{
-            padding-right: 32px;
-          }
+          
         }
-        
-      }
-      .styled-link {
-        text-decoration: none;
-        text-transform: capitalize;
-        color: variables.$color-softwhite;
-        background: rgb(100,123,100);
-        background: linear-gradient(90deg, rgba(100,123,100,1) 0%, rgba(102,172,102,1) 100%);
-        border-width: 0;
-        padding: 15px;
-        border-radius: 10px;
-        @include responsive.sm{
-          display: none;
-        }   
+        .styled-link {
+          text-decoration: none;
+          text-transform: capitalize;
+          color: variables.$color-softwhite;
+          background: rgb(100,123,100);
+          background: linear-gradient(90deg, rgba(100,123,100,1) 0%, rgba(102,172,102,1) 100%);
+          border-width: 0;
+          padding: 15px;
+          border-radius: 10px;
+          @include responsive.sm{
+            display: none;
+          }   
+        }
       }
     }
   }
