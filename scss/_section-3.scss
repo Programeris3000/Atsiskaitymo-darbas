@@ -47,7 +47,7 @@
         position:relative;
         z-index: 0;
         @include responsive.md{
-          grid-template-columns: 1fr;
+          grid-template-columns: 1fr 1fr;
         }
         @include responsive.sm{
           grid-template-columns: 1fr 1fr;
@@ -173,11 +173,18 @@
           padding-left: 50px;
           padding-right: 50px;
           padding-bottom: 72px;
+          @include responsive.md{
+            grid-column: 1 / 3;
+            margin-left: 50px;
+            margin-right: 50px;
+          }
           @include responsive.sm{
             padding-top: 34px;
             padding-left: 22px;
             padding-right: 22px;
             padding-bottom: 32px;
+            margin: unset;
+            grid-column: unset;
             display: none;
           }   
           .content-wrapper-img{
